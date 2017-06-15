@@ -1,0 +1,8 @@
+## YAML Template.
+---
+
+Birk\MyBundle\Entity\User:
+    user_{1..10}:
+        name : <name()>
+        photo: <imageUrl(300,300,'people')>
+        bio: <text(200)>

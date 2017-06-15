@@ -1,0 +1,16 @@
+{% extends "@BirkTwig/home.html.twig" %}
+
+{% block content %}
+
+        <div class="element solo">
+            <h2>{{ user.name }}</h2>
+            <img src="{{ user.photo }}">
+            <p>{{ user.bio }}</p>
+            <ul>
+            {% for p in user.post %}
+                <li>{{ p.title }}</li>
+            {% endfor %}
+            <ul>
+        </div>
+
+{% endblock %}

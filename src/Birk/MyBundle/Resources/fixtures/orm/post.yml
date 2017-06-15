@@ -1,0 +1,13 @@
+## YAML Template.
+---
+
+Birk\MyBundle\Entity\Post:
+    post_{1..30}:
+        title: <sentence(6)>
+        photo: <imageUrl(300,300,'abstract')>
+        date : <dateTime()>
+        description: <text(400)>
+
+        user: '@user_<numberBetween(1,10)>'
+
+

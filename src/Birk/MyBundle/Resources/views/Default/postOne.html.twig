@@ -1,0 +1,13 @@
+{% extends "@BirkTwig/home.html.twig" %}
+
+{% block content %}
+
+        <div class="element solo">
+            <h2>{{ post.title }}</h2>
+            <img src="{{ post.photo }}">
+            <p>{{ post.description }}</p>
+            <p>{{ post.date|date("d/m/Y") }}</p>
+            <a href="#">{{ post.user.name }}</a>
+        </div>
+
+{% endblock %}

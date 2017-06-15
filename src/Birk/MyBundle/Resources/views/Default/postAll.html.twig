@@ -1,0 +1,15 @@
+{% extends "@BirkTwig/home.html.twig" %}
+
+{% block content %}
+
+    {% for p in post %}
+        <div class="element">
+            <h2>{{ p.title }}</h2>
+            <img src="{{ p.photo }}">
+            <p>{{ p.description }}</p>
+            <p>{{ p.date|date("d/m/Y") }}</p>
+            <a href="{{ path('birk_my_post_postone')~'/'~p.id}}">++++++ en savoir plus ++++++</a>
+        </div>
+    {% endfor %}
+
+{% endblock %}
