@@ -12,7 +12,7 @@ use Birk\MyBundle\Entity\Post;
 class PostController extends Controller
 {
     /**
-     * @Route("/post")
+     * @Route("/")
      * name="post"
      */
     public function postAllAction()

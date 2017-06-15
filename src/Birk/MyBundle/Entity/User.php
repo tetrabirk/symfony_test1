@@ -46,7 +46,7 @@ class User
 
     /**
      * @var ArrayCollection
-     * @ORM\OneToMany(targetEntity="Post", mappedBy="User")
+     * @ORM\OneToMany(targetEntity="Post", mappedBy="user")
 
      */
     private $post;

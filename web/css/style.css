@@ -10,6 +10,8 @@ main{
     padding:30px;
 }
 #header{
+    display: block;
+    text-decoration: none;
     width: auto;
     height: 200px;
     background-image: url(http://lorempixel.com/800/200/abstract/);
@@ -19,6 +21,16 @@ main{
     line-height:  200px;
     margin-bottom: 30px;
 
+}
+h1{
+    text-align: center;
+
+    width: 800px;
+    display: inline-block;
+    margin-top: 0px;
+}
+h3{
+    font-size: 13px;
 }
 
 #conteneur{
@@ -53,8 +65,22 @@ main{
     text-align: center;
     width: 215px;
     margin: 0px auto;
+    border : 1px solid white;
 }
-.element h2{
+.element li a{
+    width: auto;
+}
+.element li {
+    list-style-type: none;
+}
+.element ul {
+    padding: 0px;
+}
+
+.element a:hover{
+    border: 1px solid black;
+}
+h2{
     font-weight: bold;
     font-size: 14px;
 }

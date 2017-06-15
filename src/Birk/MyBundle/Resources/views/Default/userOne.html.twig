@@ -1,14 +1,17 @@
 {% extends "@BirkTwig/home.html.twig" %}
 
 {% block content %}
-
+        <h1>
+            Wonderfull User
+        </h1>
         <div class="element solo">
             <h2>{{ user.name }}</h2>
             <img src="{{ user.photo }}">
             <p>{{ user.bio }}</p>
+            <h3>Post:</h3>
             <ul>
             {% for p in user.post %}
-                <li>{{ p.title }}</li>
+                <li><a href="{{ path('birk_my_post_postone')~'/'~p.id }}">{{ p.title }}</a></li>
             {% endfor %}
             <ul>
         </div>

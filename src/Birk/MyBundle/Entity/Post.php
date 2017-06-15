@@ -54,7 +54,7 @@ class Post
     /**
      *@var string
      *
-     *@ORM\ManyToOne(targetEntity="User", inversedBy="Post",cascade={"persist"})
+     *@ORM\ManyToOne(targetEntity="User", inversedBy="post",cascade={"persist"})
      *@ORM\JoinColumn (nullable=true)
      */
     private $user;
